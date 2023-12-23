@@ -1,3 +1,29 @@
 body{
-    background-image: url();
+    background-image: url(https://i.pinimg.com/736x/a8/2b/fe/a82bfeed7a52d7970d9b552b3e703b0f.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100%;
+}
+#survey-form {
+    background-color: rgba(255, 235, 205, 90%);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 235, 205, 30%);
+    text-align: center;
+    margin: 2rem;
+}
+#survey-form, .header-container {
+    margin: 0;
+
+}
+#title, #description {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
 }
