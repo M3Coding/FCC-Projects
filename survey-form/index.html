@@ -10,19 +10,26 @@
     <main>
         <div id="container">
             <section>
-                <h1>ShaeLovee Beauty-Survey Form</h1>
-                <p>Thank you for taking this time to help us improve our services!</p>
+                <h1 id="title">ShaeLovee Beauty-Survey Form</h1>
+                <p id="description">Thank you for taking this time to help us improve our services!</p>
             </section>
-            <section>
-                <div>
-                    <label for="first-name">First Name<input type="text" id="first-name" placeholder="Enter your First Name" required></label>
-                    <label for="last-name">Last Name <input type="text" id="last-name" placeholder="Enter your Last Name" required></label>
-                    <label for="email">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
-                    <label for="age">Age (optional) <input type="number" id="age" placeholder="Age"></label>
-                </div>
-                <div></div>
-                <div></div>
-            </section>
+            <form action="" id="survey-form">
+                <section>
+                    <div>
+                        <label for="first-name">First Name<input type="text" id="first-name" placeholder="Enter your First Name" required></label>
+                        <label for="last-name">Last Name <input type="text" id="last-name" placeholder="Enter your Last Name" required></label>
+                        <label for="email">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
+                        <label for="age">Age (optional) <input type="number" id="age" placeholder="Age" min="16" max="120"></label>
+                    </div>
+                    <div>
+                        <select name="dropdown" id="dropdown">
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div></div>
+                </section>
+            </form>
         </div>
     </main>
     <footer></footer>
