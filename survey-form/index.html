@@ -15,24 +15,101 @@
             </section>
             <form action="" id="survey-form">
                 <section>
-                    <div>
+                    <div class="personal-info">
                         <label for="first-name">First Name<input type="text" id="first-name" placeholder="Enter your First Name" required></label>
                         <label for="last-name">Last Name <input type="text" id="last-name" placeholder="Enter your Last Name" required></label>
                         <label for="email">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
                         <label for="age">Age (optional) <input type="number" id="age" placeholder="Age" min="16" max="120"></label>
                     </div>
-                    <div>
-                        <select name="dropdown" id="dropdown">
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
-                    </div>
-                    <div></div>
                 </section>
+                <section>
+                    <div class="survey-info">
+                        <div class="experience">
+                            <label for="">Which option best describes your experience at ShaeLovee Beauty?
+                                <select name="dropdown" id="dropdown">
+                                    <option value="">Selcet an option</option>
+                                    <option value="1">Excellent</option>
+                                    <option value="2">Good</option>
+                                    <option value="3">Average</option>
+                                    <option value="4">Bad</option>
+                                </select>
+                            </label>
+                                
+                        </div>
+                        <div class="recommend">
+                            <label for="">Would you recommend ShaeLovee Beauty?</label>
+                            <label for="">
+                                <input type="radio" name="recommendation" id="recommendation" checked>Yes
+        
+                            </label>
+                            <label for="">
+                                <input type="radio" name="recommendation" id="recommendation"> No
+        
+                            </label>
+                            <label for="">
+                                <input type="radio" name="recommendation" id="recommendation">Maybe
+        
+                            </label>
+                        </div>
+                        <div class="favorite-service">
+                            <label for="">What is your favorite service that ShaeLovee Beauty offer?</label>
+                            <label for="offered-service">
+                                <select name="offered-service" id="offered-service">
+                                    <option value="">Select an option</option>
+                                    <option value="">Hair</option>
+                                    <option value="">Lashes</option>
+                                    <option value="">Makeup</option>
+                                </select>
+                            </label>
+                            <label for="">What can ShaeLovee Beauty improve?
+                            </label>
+                            <label for="hair-services">
+                                <input type="checkbox" id="hair-services"> Hair Services
+                            </label>
+                            <label for="lashes-services">
+                                <input type="checkbox" id="lashes-services"> Lashes Services
+                            </label>
+                            <label for="makeup-services">
+                                <input type="checkbox" id="makeup-services"> Makeup Services
+                            </label>
+                            <label for="booking">
+                                <input type="checkbox" id="booking"> Appointment Booking
+                            </label>
+                            <label for="wait-times">
+                                <input type="checkbox" id="wait-times"> Wait Times
+                            </label>
+                            <label for="hair-variety">
+                                <input type="checkbox" id="hair-variety"> Hair Variety
+                            </label>
+                            <label for="makeup-variety">
+                                <input type="checkbox" id="makeup-variety"> Makeup Variety
+                            </label>
+                            <label for="lashes-variety">
+                                <input type="checkbox" id="lashes-variety"> Lashes Variety
+                            </label>
+                        </div>
+
+                    </div>
+                </section>
+                <section>
+                    <div class="comment-section">
+                        <label for="suggestions">
+                            Any additional comments or suggestions to improve the overall experience here at ShaeLovee Beauty?
+                        </label>
+                        <label for="comments">
+                            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter comments and suggestions here..."></textarea>
+                        </label>
+                    </div>
+                </section>
+                <div class="submit">
+                    <input type="submit">
+                </div>
             </form>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; ShaeLovee Beauty 2024 </p>
+    </footer>
     
 </body>
 </html>
