@@ -37,12 +37,64 @@
             <label for="birth-date">Date Of Birth<span class="sr-only">(Date of Birth)</span></label>
             <input id="birth-date" name="birth-date" type="date" />
           </div>
-                <h2 id="html-questions">HMTL Questions</h2>
-                <h2 id="css-questions">CSS Questions</h2>
+                
             </section>
-            <section role="region" aria-labelledby="html-questions"></section>
-            <section role="region" aria-labelledby="css-questions"></section>
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HMTL Questions</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question" name="true-false-question">
+                        <legend>True/False:Is HTML a programmin language?</legend>
+                        <ul class="answers-list">
+                            <li><label for="q1-a1"><input type="radio" id="q1-a1" value="true" name="question1-answers"> True</label></li>
+                            <li><label for="q1-a2"><input type="radio" id="q1-a2" value="false" name="question1-answers"> False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question"name="true-false-question">
+                        <legend>True/False: HTML does not give the basic structure of a webpage.</legend>
+                        <ul class="answers-list">
+                            <li><label for="q2-a1"><input type="radio" id="q2-a1" value="true" name="question2-answers">True</label></li>
+                            <li><label for="q2-a2"><input type="radio" id="q2-a2" value="false" name="question2-answers">False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS Questions</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="css1-answer">Are you a frontend developer?</label>
+                    </div>
+                    <div class="answer">
+                        <select name="css1-answer" id="css1-answer" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="css2-answer">Do you have any questions?</label>
+                    </div>
+                    <div class="answer">
+                        <textarea name="css2-answer" id="css2-answer" cols="30" rows="10" placeholder="Enter answer here..."></textarea>
+                    </div>
+                </div>
+            </section>
+            <button method="post" type="submit">Send</button>
         </form>
     </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA         
+        </address>
+    </footer>
+    
 </body>
 </html>
