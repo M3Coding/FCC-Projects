@@ -111,12 +111,15 @@ input {
 .info input {
   width: 50%;
   text-align: left;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .info label {
-  width: 10%;
+  width: 20%;
   min-width: 55px;
-  text-align: right;
+  text-align: left;
+  margin-bottom: 5px;
 }
 
 .question-block {
@@ -138,13 +141,19 @@ p::before {
 }
 
 .question {
-  border: none;
   padding-bottom: 0;
 }
 
 .answers-list {
   list-style: none;
   padding: 0;
+}
+textarea {
+    width: 100%;
+}
+select {
+    width: 150px;
+    height: 25px;
 }
 
 button {
