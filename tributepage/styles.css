@@ -106,7 +106,7 @@ section {
     justify-content: center;
     background-color: #ffff;
     text-align: center;
-    transition: background-color 0.3s ease; /* Add transition effect */
+    overflow: hidden;
 
 
 }
@@ -135,9 +135,21 @@ section {
     justify-content: center;
 
 
+
 }
 #owner-image-text h2, h3 {
     color: black;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .owner-image p {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .owner-image h2,h3 {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
 }
 /*Services Section*/
 .service-section {
@@ -284,7 +296,4 @@ button:hover {
     justify-content: center;
     margin-left: 65px;
     margin-top: 5px;
-}
-.section.in-focus {
-    background-color: #ddd; /* Change background color when in focus */
 }

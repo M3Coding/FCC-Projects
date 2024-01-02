@@ -21,11 +21,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    window.addEventListener("scroll", updateSections);
-    window.addEventListener("resize", updateSections);
+    function handleScroll() {
+        updateSections();
+        sections.forEach(section => {
+            if (section.classList.contains("in-focus")) {
+                section.style.transition = "background-color 0.3s ease"; // Add transition effect
+            } else {
+                section.style.transition = "none"; // Remove transition when not in focus
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
 
     // Initial check when the page loads
-    updateSections();
+    handleScroll();
 });
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll(".about-section");
@@ -50,127 +61,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    window.addEventListener("scroll", updateSections);
-    window.addEventListener("resize", updateSections);
-
-    // Initial check when the page loads
-    updateSections();
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".product-section");
-
-    function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    function updateSections() {
+    function handleScroll() {
+        updateSections();
         sections.forEach(section => {
-            if (isElementInViewport(section)) {
-                section.classList.add("in-focus");
+            if (section.classList.contains("in-focus")) {
+                section.style.transition = "background-color 0.3s ease"; // Add transition effect
             } else {
-                section.classList.remove("in-focus");
+                section.style.transition = "none"; // Remove transition when not in focus
             }
         });
     }
 
-    window.addEventListener("scroll", updateSections);
-    window.addEventListener("resize", updateSections);
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
 
     // Initial check when the page loads
-    updateSections();
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".booking-section");
-
-    function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    function updateSections() {
-        sections.forEach(section => {
-            if (isElementInViewport(section)) {
-                section.classList.add("in-focus");
-            } else {
-                section.classList.remove("in-focus");
-            }
-        });
-    }
-
-    window.addEventListener("scroll", updateSections);
-    window.addEventListener("resize", updateSections);
-
-    // Initial check when the page loads
-    updateSections();
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".contact-us-section");
-
-    function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    function updateSections() {
-        sections.forEach(section => {
-            if (isElementInViewport(section)) {
-                section.classList.add("in-focus");
-            } else {
-                section.classList.remove("in-focus");
-            }
-        });
-    }
-
-    window.addEventListener("scroll", updateSections);
-    window.addEventListener("resize", updateSections);
-
-    // Initial check when the page loads
-    updateSections();
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".survey-section");
-
-    function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    function updateSections() {
-        sections.forEach(section => {
-            if (isElementInViewport(section)) {
-                section.classList.add("in-focus");
-            } else {
-                section.classList.remove("in-focus");
-            }
-        });
-    }
-
-    window.addEventListener("scroll", updateSections);
-    window.addEventListener("resize", updateSections);
-
-    // Initial check when the page loads
-    updateSections();
+    handleScroll();
 });
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll(".service-section");
@@ -195,10 +101,182 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    window.addEventListener("scroll", updateSections);
-    window.addEventListener("resize", updateSections);
+    function handleScroll() {
+        updateSections();
+        sections.forEach(section => {
+            if (section.classList.contains("in-focus")) {
+                section.style.transition = "background-color 0.3s ease"; // Add transition effect
+            } else {
+                section.style.transition = "none"; // Remove transition when not in focus
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
 
     // Initial check when the page loads
-    updateSections();
+    handleScroll();
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".product-section");
+
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function updateSections() {
+        sections.forEach(section => {
+            if (isElementInViewport(section)) {
+                section.classList.add("in-focus");
+            } else {
+                section.classList.remove("in-focus");
+            }
+        });
+    }
+
+    function handleScroll() {
+        updateSections();
+        sections.forEach(section => {
+            if (section.classList.contains("in-focus")) {
+                section.style.transition = "background-color 0.3s ease"; // Add transition effect
+            } else {
+                section.style.transition = "none"; // Remove transition when not in focus
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+
+    // Initial check when the page loads
+    handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".booking-section");
+
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function updateSections() {
+        sections.forEach(section => {
+            if (isElementInViewport(section)) {
+                section.classList.add("in-focus");
+            } else {
+                section.classList.remove("in-focus");
+            }
+        });
+    }
+
+    function handleScroll() {
+        updateSections();
+        sections.forEach(section => {
+            if (section.classList.contains("in-focus")) {
+                section.style.transition = "background-color 0.3s ease"; // Add transition effect
+            } else {
+                section.style.transition = "none"; // Remove transition when not in focus
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+
+    // Initial check when the page loads
+    handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".countact-us-section");
+
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function updateSections() {
+        sections.forEach(section => {
+            if (isElementInViewport(section)) {
+                section.classList.add("in-focus");
+            } else {
+                section.classList.remove("in-focus");
+            }
+        });
+    }
+
+    function handleScroll() {
+        updateSections();
+        sections.forEach(section => {
+            if (section.classList.contains("in-focus")) {
+                section.style.transition = "background-color 0.3s ease"; // Add transition effect
+            } else {
+                section.style.transition = "none"; // Remove transition when not in focus
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+
+    // Initial check when the page loads
+    handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".survey-section");
+
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function updateSections() {
+        sections.forEach(section => {
+            if (isElementInViewport(section)) {
+                section.classList.add("in-focus");
+            } else {
+                section.classList.remove("in-focus");
+            }
+        });
+    }
+
+    function handleScroll() {
+        updateSections();
+        sections.forEach(section => {
+            if (section.classList.contains("in-focus")) {
+                section.style.transition = "background-color 0.3s ease"; // Add transition effect
+            } else {
+                section.style.transition = "none"; // Remove transition when not in focus
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+
+    // Initial check when the page loads
+    handleScroll();
+});
+
 
