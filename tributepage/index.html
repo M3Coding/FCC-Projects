@@ -40,7 +40,9 @@
                 <section class="about-section">
                     
                     <div class="owner-image">
-                        <img src="./assets/IMG_4670.PNG" alt="" id="pic1">
+                        <div class="image-container">
+                            <img src="./assets/IMG_4670.PNG" alt="" id="pic1">
+                        </div>
                         <div id="owner-image-text">
                             <h2 id="about">About</h2>
                             <h3>Meet The Owner & Operator</h3>
@@ -87,7 +89,6 @@
                                     <label for="name"> Name:
                                         <input type="text" id="name" name="name" placeholder="Enter First and Last Name" required>
                                     </label>
-                                    
                                 </div>
                                 <div class="service-choice-section">
                                     <h3>Choose your services:</h3>
@@ -118,6 +119,9 @@
                                     </label>
                                 </div>
                             </div>
+                            <div>
+                                <textarea name="additional-request" id="additional-request" cols="30" rows="7" placeholder="Additional requests..."></textarea>
+                            </div>
                             <div class="submit-button">
                                 <button type="submit">Book It!</button>
                             </div>
@@ -143,6 +147,6 @@
         </footer>
 
     </div>
-    
+    <script src="script.js"> </script>
 </body>
 </html>
