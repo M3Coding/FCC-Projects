@@ -4,55 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShaeLovee Beauty</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Long+Cang&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap">
+
     <link rel="stylesheet" href="styles.css">
+    
+
 </head>
 <body>
     <main id="main">
-        <header id="header-container">
-            <div class="logo">
-                <img src="" alt="">
+            <header id="header-container">
+                <div class="logo">
+                    <img src="https://i.pinimg.com/736x/a8/2b/fe/a82bfeed7a52d7970d9b552b3e703b0f.jpg" alt="" id="logo">
+                </div>
+                <div id="title">
+                    <h1>ShaeLovee Beauty</h1>
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#booking">Book</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#survey">Survey</a></li>
+                </ul>
+            </header>
+            <div class="home-container">
+                <section class="home-section">
+                    <div id="welcome">
+                        <h2 id="home">WELCOME TO SHAELOVEE BEAUTY!!!</h2>
+                    </div>
+                </section>
             </div>
-            <div id="title">
-                <h1>ShaeLovee Beauty</h1>
+                <section class="about-section">
+                    
+                    <div class="owner-image">
+                        <img src="./assets/IMG_4670.PNG" alt="" id="pic1">
+                        <div id="owner-image-text">
+                            <h2 id="about">About</h2>
+                            <h3>Meet The Owner & Operator</h3>
+                            <p>Hello and Welcome to ShaeLovee Beauty! My name is Lashae Eady and I am the proprieter and owner of ShaeLovee Beauty. Our mission is to spread beauty and build self-confidence in every client!</p>
+                        </div>
+                        
+                    </div>
+                </section>
+            <div class="service-section">
+                <h2 id="services">Services</h2>
+                <div>
+                    <div class="service-subsection">
+                        <img src="assets/shari-sirotnak-oM5YoMhTf8E-unsplash.jpg" alt="" class="service-image">
+                        <p id="hair">HAIR</p>
+                    </div>
+                    <div class="service-subsection">
+                        <img src="assets/jazmin-quaynor-FoeIOgztCXo-unsplash.jpg" alt="" class="service-image">
+                        <p id="make-up">MAKE-UP</p>
+                    </div>
+                    <div class="service-subsection">
+                        <img src="assets/top-view-eyelashes-tools-arrangement.jpg" alt="" class="service-image">
+                        <p id="lashes">LASHES</p>
+                    </div>
+                </div>
+                
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#booking">Book</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
-                <li><a href="#survey">Survey</a></li>
-            </ul>
-        </header>
-        <div class="profile-pic"></div>
-        <section class="home-section">
-            <h2 id="home">WELCOME TO SHAELOVEE BEAUTY!!!</h2>
-        </section>
-        <section class="about-section">
-            <h2 id="about">About</h2>
-        </section>
-        <section class="services-section">
-            <h2 id="services">Services</h2>
-        </section>
-        <section class="product-section">
-            <h2 id="products">Products</h2>
-        </section>
-        <section class="booking-section">
-            <h2 id="booking">Book Us!</h2>
-        </section>
-        <section class="contact-us-section">
-            <h2 id="contact-us">Contact Us!</h2>
-        </section>
-        <section class="survey-section">
-            <h2 id="survey">Survey</h2>
-        </section>
-        
-    </main>
-    <footer>
-        <address>
+            <section class="product-section">
+                <h2 id="products">Products</h2>
+            </section>
+            <div class="booking-section">
+                
+                <div class="booking-container">
+                    <div id="calendar-image">
+                        <img src="./assets/steve-johnson-bTulpIPKxGg-unsplash.jpg" alt="">
+                    </div>
+                    <div class="booking-info">
+                        <div id="section-heading">
+                            <h2 id="booking">Book Us!</h2>
+                            <p><i>*We are waiting to share the ShaeLovee Beauty! Book your beauty appointment TODAY!</i></p>
+                        </div>
+                        <form action="" method="post">
+                            <div class="form">
+                                <div class="name-date-time">
+                                    <label for="name"> Name:
+                                        <input type="text" id="name" name="name" placeholder="Enter First and Last Name" required>
+                                    </label>
+                                    
+                                </div>
+                                <div class="service-choice-section">
+                                    <h3>Choose your services:</h3>
+                                    <div>
+                                        <label for="service-choice">
+                                            <input type="checkbox" id="service-choice" name="service-choice"> Hair
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="service-choice">
+                                            <input type="checkbox" id="service-choice" name="service-choice"> Make-Up
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label for="service-choice"> 
+                                            <input type="checkbox" id="service-choice" name="service-choice"> Lashes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="name-date-time">
+                                    <label for="date"> Date:
+                                        <input type="date" id="date" name="date" required> 
+                                    </label>
+                                </div>
+                                <div class="name-date-time">
+                                    <label for="time"> Time:
+                                        <input type="time" id="time" name="time" required>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="submit-button">
+                                <button type="submit">Book It!</button>
+                            </div>
+    
+                        </form>
+                </div>
 
-        </address>
-    </footer>
+                </div>
+            </div>
+            <section class="contact-us-section">
+                <h2 id="contact-us">Contact Us!</h2>
+            </section>
+            <section class="survey-section">
+                <h2 id="survey">Survey</h2>
+            </section>
+        </main>
+        </div>
+    <div class="footer-container">
+        <footer>
+            <address>
+    
+            </address>
+        </footer>
+
+    </div>
+    
 </body>
 </html>
