@@ -18,7 +18,7 @@ body {
     height: 100%;
     flex-direction: column;
     border: solid black 1px;
-}
+} /* this sets the navigation to the left of the page. However, body of the document must be aligned correctly */
 #navbar a:hover {
     background-color: grey;
     width: 100%;
@@ -34,11 +34,16 @@ a {
     text-decoration: none;
     font-size: 17px;
     font-weight: bolder;
-    
 }
 #navbar-title {
     overflow:auto;
     font-size: xx-large;
     text-align: center;
     border-bottom: solid black 2px;
+}
+@media (max-width:1200px ) {
+    body {
+        min-width: 100px;
+
+    }
 }
