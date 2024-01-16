@@ -1,0 +1,14 @@
+#navbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#navbar {
+    border-bottom: solid black 3px;
+    border-right: solid grey 1px;
+}
+
+#navbar div {
+    border-bottom: solid black 1px;
+}
